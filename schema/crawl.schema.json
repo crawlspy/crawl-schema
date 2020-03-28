@@ -1,0 +1,123 @@
+{
+
+    "meta:license": [
+      "Copyright 2020 Terry Cai Incorporated. All rights reserved.",
+      "This file is licensed to you under the Apache License, Version 2.0 (the 'License');",
+      "you may not use this file except in compliance with the License. You may obtain a copy",
+      "of the License at http://www.apache.org/licenses/LICENSE-2.0"
+    ],
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "https://schemas.w3cub.com/schemas/crawl",
+    "title": "Crawl Properties",
+    "description": "This schema is a standard for capturing pictures.",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "value": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string",
+        "enum": ["json", "html"]
+      },
+      "category": {
+        "type": "boolean",
+        "default": false
+      },
+      "search": {
+        "type": "boolean",
+        "default": false
+      },
+      "chinesesearch": {
+        "type": "boolean",
+        "default": false
+      },
+      "categorydata": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name"
+          ]
+        }
+      },
+      "pageurl": {
+        "type": "string"
+      },
+      "pagematch": {
+        "type": "string"
+      },
+      "pagemethod": {
+        "type": "string"
+      },
+      "pageoffset": {
+        "type": "string"
+      },
+      "pageoffsetmatch": {
+        "type": "string"
+      },
+      "searchurl": {
+        "type": "string"
+      },
+      "searchmatch": {
+        "type": "string"
+      },
+      "pageitem": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          },
+          "downloadurl": {
+            "type": "string"
+          },
+          "width": {
+            "type": "string"
+          },
+          "height": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "url",
+          "downloadurl",
+          "width",
+          "height"
+        ]
+      },
+      "useragent": {
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "name",
+      "value",
+      "description",
+      "type",
+      "category",
+      "search",
+      "chinesesearch",
+      "categorydata",
+      "pageurl",
+      "pagematch",
+      "pagemethod",
+      "searchurl",
+      "searchmatch",
+      "pageitem",
+      "useragent"
+    ]
+  }
