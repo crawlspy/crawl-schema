@@ -8,14 +8,14 @@
 
 ### Objects
 
--   [Untitled object in Crawl Properties](./crawl-properties-categoryitem.md) – `https://schemas.w3cub.com/schemas/crawl#/properties/categoryitem`
--   [Untitled object in Crawl Properties](./crawl-properties-categorydata-items.md) – `https://schemas.w3cub.com/schemas/crawl#/properties/categorydata/items`
--   [Untitled object in Crawl Properties](./crawl-properties-pageitem.md) – `https://schemas.w3cub.com/schemas/crawl#/properties/pageitem`
+-   [Untitled object in Crawl Properties](./crawl-properties-category-data-items.md) – `https://schemas.w3cub.com/schemas/crawl#/properties/categorydata/items`
+-   [category item](./crawl-properties-category-item.md) – `https://schemas.w3cub.com/schemas/crawl#/properties/categoryitem`
 -   [extend fetch headers](./crawl-properties-extend-fetch-headers.md) – `https://schemas.w3cub.com/schemas/crawl#/properties/headers`
+-   [page item](./crawl-properties-page-item.md) – `https://schemas.w3cub.com/schemas/crawl#/properties/pageitem`
 
 ### Arrays
 
--   [Untitled array in Crawl Properties](./crawl-properties-categorydata.md) – `https://schemas.w3cub.com/schemas/crawl#/properties/categorydata`
+-   [category data](./crawl-properties-category-data.md) – `https://schemas.w3cub.com/schemas/crawl#/properties/categorydata`
 
 ## Version Note
 

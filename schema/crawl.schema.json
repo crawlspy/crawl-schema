@@ -55,15 +55,18 @@
       "categoryitem": {
         "type": "object",
         "version": "1.0.0",
+        "title": "category item",
         "$comment": "category item content match",
         "properties": {
           "id": {
             "version": "1.0.0",
-            "type": "string"
+            "type": "string",
+            "title": "match category item id"
           },
           "name": {
             "version": "1.0.0",
-            "type": "string"
+            "type": "string",
+            "title": "match category item name"
           }
         },
         "required": [
@@ -74,15 +77,18 @@
       "categorydata": {
         "type": "array",
         "version": "1.0.0",
+        "title": "category data",
         "$comment": "directly provide category data",
         "items": {
           "type": "object",
           "properties": {
             "id": {
+              "title": "category item id",
               "version": "1.0.0",
               "type": "string"
             },
             "name": {
+              "title": "category item name",
               "version": "1.0.0",
               "type": "string"
             }
@@ -94,10 +100,13 @@
         }
       },
       "pageurl": {
+        "title": "fetch page url",
         "type": "string",
         "version": "1.0.0"
       },
       "pagematch": {
+        "title": "fetch target match",
+        "description": "fetch page json or html target match",
         "version": "1.0.0",
         "type": "string"
       },
@@ -125,20 +134,25 @@
         "version": "1.0.0",
         "type": "object",
         "$comment": "page item content match",
+        "title": "page item",
         "properties": {
           "url": {
+            "title": "thumbnail url",
             "version": "1.0.0",
             "type": "string"
           },
           "downloadurl": {
+            "title": "download picture url",
             "version": "1.0.0",
             "type": "string"
           },
           "width": {
+            "title": "download picture width",
             "version": "1.0.0",
             "type": "string"
           },
           "height": {
+            "title": "download picture height",
             "version": "1.0.0",
             "type": "string"
           }

@@ -27,16 +27,16 @@ This schema is a standard for capturing pictures.
 | [categoryurl](#categoryurl)         | `string`     | Optional | cannot be null | [Crawl Properties](crawl-properties-categoryurl.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/categoryurl")                               |
 | [search](#search)                   | `boolean`    | Required | cannot be null | [Crawl Properties](crawl-properties-search.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/search")                                         |
 | [chinesesearch](#chinesesearch)     | `boolean`    | Required | cannot be null | [Crawl Properties](crawl-properties-chinesesearch.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/chinesesearch")                           |
-| [categoryitem](#categoryitem)       | `object`     | Optional | cannot be null | [Crawl Properties](crawl-properties-categoryitem.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/categoryitem")                             |
-| [categorydata](#categorydata)       | `array`      | Optional | cannot be null | [Crawl Properties](crawl-properties-categorydata.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/categorydata")                             |
-| [pageurl](#pageurl)                 | `string`     | Required | cannot be null | [Crawl Properties](crawl-properties-pageurl.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pageurl")                                       |
-| [pagematch](#pagematch)             | `string`     | Required | cannot be null | [Crawl Properties](crawl-properties-pagematch.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pagematch")                                   |
+| [categoryitem](#categoryitem)       | `object`     | Optional | cannot be null | [Crawl Properties](crawl-properties-category-item.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/categoryitem")                            |
+| [categorydata](#categorydata)       | `array`      | Optional | cannot be null | [Crawl Properties](crawl-properties-category-data.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/categorydata")                            |
+| [pageurl](#pageurl)                 | `string`     | Required | cannot be null | [Crawl Properties](crawl-properties-fetch-page-url.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pageurl")                                |
+| [pagematch](#pagematch)             | `string`     | Required | cannot be null | [Crawl Properties](crawl-properties-fetch-target-match.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pagematch")                          |
 | [pagemethod](#pagemethod)           | `string`     | Optional | cannot be null | [Crawl Properties](crawl-properties-pagemethod.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pagemethod")                                 |
 | [pageoffset](#pageoffset)           | `string`     | Optional | cannot be null | [Crawl Properties](crawl-properties-pageoffset.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pageoffset")                                 |
 | [pageoffsetmatch](#pageoffsetmatch) | `string`     | Optional | cannot be null | [Crawl Properties](crawl-properties-pageoffsetmatch.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pageoffsetmatch")                       |
 | [searchurl](#searchurl)             | `string`     | Optional | cannot be null | [Crawl Properties](crawl-properties-searchurl.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/searchurl")                                   |
 | [searchmatch](#searchmatch)         | `string`     | Optional | cannot be null | [Crawl Properties](crawl-properties-searchmatch.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/searchmatch")                               |
-| [pageitem](#pageitem)               | `object`     | Required | cannot be null | [Crawl Properties](crawl-properties-pageitem.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pageitem")                                     |
+| [pageitem](#pageitem)               | `object`     | Required | cannot be null | [Crawl Properties](crawl-properties-page-item.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pageitem")                                    |
 | [useragent](#useragent)             | Unknown Type | Optional | cannot be null | [Crawl Properties](crawl-properties-fetch-useragent-or-false.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/useragent")                    |
 | [headers](#headers)                 | `object`     | Optional | cannot be null | [Crawl Properties](crawl-properties-extend-fetch-headers.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/headers")                          |
 
@@ -197,13 +197,13 @@ This schema is a standard for capturing pictures.
 `categoryitem`
 
 -   is optional
--   Type: `object` ([Details](crawl-properties-categoryitem.md))
+-   Type: `object` ([category item](crawl-properties-category-item.md))
 -   cannot be null
--   defined in: [Crawl Properties](crawl-properties-categoryitem.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/categoryitem")
+-   defined in: [Crawl Properties](crawl-properties-category-item.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/categoryitem")
 
 ### categoryitem Type
 
-`object` ([Details](crawl-properties-categoryitem.md))
+`object` ([category item](crawl-properties-category-item.md))
 
 ## categorydata
 
@@ -216,13 +216,13 @@ This schema is a standard for capturing pictures.
 `categorydata`
 
 -   is optional
--   Type: `object[]` ([Details](crawl-properties-categorydata-items.md))
+-   Type: `object[]` ([Details](crawl-properties-category-data-items.md))
 -   cannot be null
--   defined in: [Crawl Properties](crawl-properties-categorydata.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/categorydata")
+-   defined in: [Crawl Properties](crawl-properties-category-data.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/categorydata")
 
 ### categorydata Type
 
-`object[]` ([Details](crawl-properties-categorydata-items.md))
+`object[]` ([Details](crawl-properties-category-data-items.md))
 
 ## pageurl
 
@@ -232,29 +232,29 @@ This schema is a standard for capturing pictures.
 `pageurl`
 
 -   is required
--   Type: `string`
+-   Type: `string` ([fetch page url](crawl-properties-fetch-page-url.md))
 -   cannot be null
--   defined in: [Crawl Properties](crawl-properties-pageurl.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pageurl")
+-   defined in: [Crawl Properties](crawl-properties-fetch-page-url.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pageurl")
 
 ### pageurl Type
 
-`string`
+`string` ([fetch page url](crawl-properties-fetch-page-url.md))
 
 ## pagematch
 
-
+fetch page json or html target match
 
 
 `pagematch`
 
 -   is required
--   Type: `string`
+-   Type: `string` ([fetch target match](crawl-properties-fetch-target-match.md))
 -   cannot be null
--   defined in: [Crawl Properties](crawl-properties-pagematch.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pagematch")
+-   defined in: [Crawl Properties](crawl-properties-fetch-target-match.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pagematch")
 
 ### pagematch Type
 
-`string`
+`string` ([fetch target match](crawl-properties-fetch-target-match.md))
 
 ## pagemethod
 
@@ -347,13 +347,13 @@ This schema is a standard for capturing pictures.
 `pageitem`
 
 -   is required
--   Type: `object` ([Details](crawl-properties-pageitem.md))
+-   Type: `object` ([page item](crawl-properties-page-item.md))
 -   cannot be null
--   defined in: [Crawl Properties](crawl-properties-pageitem.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pageitem")
+-   defined in: [Crawl Properties](crawl-properties-page-item.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pageitem")
 
 ### pageitem Type
 
-`object` ([Details](crawl-properties-pageitem.md))
+`object` ([page item](crawl-properties-page-item.md))
 
 ## useragent
 
