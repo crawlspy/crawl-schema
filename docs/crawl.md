@@ -216,13 +216,13 @@ This schema is a standard for capturing pictures.
 `categorydata`
 
 -   is optional
--   Type: `object[]` ([Details](crawl-properties-category-data-items.md))
+-   Type: `object[]` ([category data item](crawl-properties-category-data-category-data-item.md))
 -   cannot be null
 -   defined in: [Crawl Properties](crawl-properties-category-data.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/categorydata")
 
 ### categorydata Type
 
-`object[]` ([Details](crawl-properties-category-data-items.md))
+`object[]` ([category data item](crawl-properties-category-data-category-data-item.md))
 
 ## pageurl
 

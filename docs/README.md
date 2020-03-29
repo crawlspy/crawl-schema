@@ -8,7 +8,7 @@
 
 ### Objects
 
--   [Untitled object in Crawl Properties](./crawl-properties-category-data-items.md) – `https://schemas.w3cub.com/schemas/crawl#/properties/categorydata/items`
+-   [category data item](./crawl-properties-category-data-category-data-item.md) – `https://schemas.w3cub.com/schemas/crawl#/properties/categorydata/items`
 -   [category item](./crawl-properties-category-item.md) – `https://schemas.w3cub.com/schemas/crawl#/properties/categoryitem`
 -   [extend fetch headers](./crawl-properties-extend-fetch-headers.md) – `https://schemas.w3cub.com/schemas/crawl#/properties/headers`
 -   [page item](./crawl-properties-page-item.md) – `https://schemas.w3cub.com/schemas/crawl#/properties/pageitem`

@@ -81,6 +81,7 @@
         "$comment": "directly provide category data",
         "items": {
           "type": "object",
+          "title": "category data item",
           "properties": {
             "id": {
               "title": "category item id",
