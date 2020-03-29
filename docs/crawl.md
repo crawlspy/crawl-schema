@@ -38,6 +38,7 @@ This schema is a standard for capturing pictures.
 | [searchmatch](#searchmatch)         | `string`     | Optional | cannot be null | [Crawl Properties](crawl-properties-searchmatch.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/searchmatch")                               |
 | [pageitem](#pageitem)               | `object`     | Required | cannot be null | [Crawl Properties](crawl-properties-pageitem.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pageitem")                                     |
 | [useragent](#useragent)             | Unknown Type | Optional | cannot be null | [Crawl Properties](crawl-properties-fetch-useragent-or-false.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/useragent")                    |
+| [headers](#headers)                 | `object`     | Optional | cannot be null | [Crawl Properties](crawl-properties-extend-fetch-headers.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/headers")                          |
 
 ## name
 
@@ -369,3 +370,19 @@ This schema is a standard for capturing pictures.
 ### useragent Type
 
 any of the folllowing: `string` or `boolean` ([fetch useragent or false](crawl-properties-fetch-useragent-or-false.md))
+
+## headers
+
+
+
+
+`headers`
+
+-   is optional
+-   Type: `object` ([extend fetch headers](crawl-properties-extend-fetch-headers.md))
+-   cannot be null
+-   defined in: [Crawl Properties](crawl-properties-extend-fetch-headers.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/headers")
+
+### headers Type
+
+`object` ([extend fetch headers](crawl-properties-extend-fetch-headers.md))

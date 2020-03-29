@@ -151,8 +151,14 @@
         ]
       },
       "useragent": {
+        "version": "1.0.0",
         "title": "fetch useragent or false",
         "type":[ "string", "boolean"]
+      },
+      "headers": {
+        "version": "1.0.0",
+        "title": "extend fetch headers",
+        "type": "object"
       }
     },
     "required": [

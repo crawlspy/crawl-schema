@@ -1,0 +1,16 @@
+# extend fetch headers Schema
+
+```txt
+https://schemas.w3cub.com/schemas/crawl#/properties/headers
+```
+
+
+
+
+| Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                   |
+| :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ---------------------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [crawl.schema.json\*](../generated/crawl.schema.json "open original schema") |
+
+## headers Type
+
+`object` ([extend fetch headers](crawl-properties-extend-fetch-headers.md))
