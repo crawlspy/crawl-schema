@@ -1,0 +1,26 @@
+{
+  "name": "crawl-schema",
+  "version": "1.0.0",
+  "description": "Capturing picture schema.",
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "scripts": {
+    "gen": "jsonschema2md -d schema -o docs -x generated"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icai/crawl-schema.git"
+  },
+  "keywords": [
+    "crawl",
+    "schma"
+  ],
+  "author": "Terry Cai",
+  "license": "Apache",
+  "bugs": {
+    "url": "https://github.com/icai/crawl-schema/issues"
+  },
+  "homepage": "https://github.com/icai/crawl-schema#readme"
+}

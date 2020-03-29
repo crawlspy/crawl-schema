@@ -1,16 +1,19 @@
-# Untitled string in Crawl Properties Schema
+# Crawl description Schema
 
 ```txt
-https://schemas.w3cub.com/schemas/crawl#/properties/useragent
+https://schemas.w3cub.com/schemas/crawl#/properties/description
 ```
 
 
 
 
+> Crawl description
+>
+
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                   |
 | :------------------ | ---------- | -------------- | ----------------------- | :---------------- | --------------------- | ------------------- | ---------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [crawl.schema.json\*](../generated/crawl.schema.json "open original schema") |
 
-## useragent Type
+## description Type
 
-`string`
+`string` ([Crawl description](crawl-properties-crawl-description.md))

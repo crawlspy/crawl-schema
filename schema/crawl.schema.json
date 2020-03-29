@@ -13,39 +13,77 @@
     "type": "object",
     "properties": {
       "name": {
-        "type": "string"
+        "type": "string",
+        "title": "Crawl name",
+        "version": "1.0.0",
+        "$comment": "Crawl Name, commonly titlecase"
       },
       "value": {
-        "type": "string"
+        "type": "string",
+        "title": "Crawl value, the Identification of current crawl",
+        "version": "1.0.0",
+        "$comment": "Crawl type, commonly lowercase"
       },
       "description": {
-        "type": "string"
+        "type": "string",
+        "title": "Crawl description",
+        "version": "1.0.0",
+        "$comment": "Crawl description"
       },
       "type": {
         "type": "string",
+        "version": "1.0.0",
+        "title": "Crawl type json or html",
         "enum": ["json", "html"]
       },
       "category": {
         "type": "boolean",
-        "default": false
+        "version": "1.0.0"
+      },
+      "categoryurl": {
+        "type": "string",
+        "version": "1.0.0"
       },
       "search": {
         "type": "boolean",
-        "default": false
+        "version": "1.0.0"
       },
       "chinesesearch": {
         "type": "boolean",
-        "default": false
+        "version": "1.0.0"
+      },
+      "categoryitem": {
+        "type": "object",
+        "version": "1.0.0",
+        "$comment": "category item content match",
+        "properties": {
+          "id": {
+            "version": "1.0.0",
+            "type": "string"
+          },
+          "name": {
+            "version": "1.0.0",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ]
       },
       "categorydata": {
         "type": "array",
+        "version": "1.0.0",
+        "$comment": "directly provide category data",
         "items": {
           "type": "object",
           "properties": {
             "id": {
+              "version": "1.0.0",
               "type": "string"
             },
             "name": {
+              "version": "1.0.0",
               "type": "string"
             }
           },
@@ -56,39 +94,52 @@
         }
       },
       "pageurl": {
-        "type": "string"
+        "type": "string",
+        "version": "1.0.0"
       },
       "pagematch": {
+        "version": "1.0.0",
         "type": "string"
       },
       "pagemethod": {
+        "version": "1.0.0",
         "type": "string"
       },
       "pageoffset": {
+        "version": "1.0.0",
         "type": "string"
       },
       "pageoffsetmatch": {
-        "type": "string"
+        "version": "1.0.0",
+        "type":"string"
       },
       "searchurl": {
-        "type": "string"
+        "version": "1.0.0",
+        "type":"string"
       },
       "searchmatch": {
-        "type": "string"
+        "version": "1.0.0",
+        "type":"string"
       },
       "pageitem": {
+        "version": "1.0.0",
         "type": "object",
+        "$comment": "page item content match",
         "properties": {
           "url": {
+            "version": "1.0.0",
             "type": "string"
           },
           "downloadurl": {
+            "version": "1.0.0",
             "type": "string"
           },
           "width": {
+            "version": "1.0.0",
             "type": "string"
           },
           "height": {
+            "version": "1.0.0",
             "type": "string"
           }
         },
@@ -100,7 +151,8 @@
         ]
       },
       "useragent": {
-        "type": "boolean"
+        "title": "fetch useragent or false",
+        "type":[ "string", "boolean"]
       }
     },
     "required": [
@@ -111,13 +163,8 @@
       "category",
       "search",
       "chinesesearch",
-      "categorydata",
       "pageurl",
       "pagematch",
-      "pagemethod",
-      "searchurl",
-      "searchmatch",
-      "pageitem",
-      "useragent"
+      "pageitem"
     ]
   }

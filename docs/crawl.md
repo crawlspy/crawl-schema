@@ -17,73 +17,84 @@ This schema is a standard for capturing pictures.
 
 # Crawl Properties Properties
 
-| Property                            | Type      | Required | Nullable       | Defined by                                                                                                                         |
-| :---------------------------------- | --------- | -------- | -------------- | :--------------------------------------------------------------------------------------------------------------------------------- |
-| [name](#name)                       | `string`  | Required | cannot be null | [Crawl Properties](crawl-properties-name.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/name")                       |
-| [value](#value)                     | `string`  | Required | cannot be null | [Crawl Properties](crawl-properties-value.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/value")                     |
-| [description](#description)         | `string`  | Required | cannot be null | [Crawl Properties](crawl-properties-description.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/description")         |
-| [type](#type)                       | `string`  | Required | cannot be null | [Crawl Properties](crawl-properties-type.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/type")                       |
-| [category](#category)               | `boolean` | Required | cannot be null | [Crawl Properties](crawl-properties-category.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/category")               |
-| [search](#search)                   | `boolean` | Required | cannot be null | [Crawl Properties](crawl-properties-search.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/search")                   |
-| [chinesesearch](#chinesesearch)     | `boolean` | Required | cannot be null | [Crawl Properties](crawl-properties-chinesesearch.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/chinesesearch")     |
-| [categorydata](#categorydata)       | `array`   | Required | cannot be null | [Crawl Properties](crawl-properties-categorydata.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/categorydata")       |
-| [pageurl](#pageurl)                 | `string`  | Required | cannot be null | [Crawl Properties](crawl-properties-pageurl.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pageurl")                 |
-| [pagematch](#pagematch)             | `string`  | Required | cannot be null | [Crawl Properties](crawl-properties-pagematch.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pagematch")             |
-| [pagemethod](#pagemethod)           | `string`  | Required | cannot be null | [Crawl Properties](crawl-properties-pagemethod.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pagemethod")           |
-| [pageoffset](#pageoffset)           | `string`  | Optional | cannot be null | [Crawl Properties](crawl-properties-pageoffset.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pageoffset")           |
-| [pageoffsetmatch](#pageoffsetmatch) | `string`  | Optional | cannot be null | [Crawl Properties](crawl-properties-pageoffsetmatch.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pageoffsetmatch") |
-| [searchurl](#searchurl)             | `string`  | Required | cannot be null | [Crawl Properties](crawl-properties-searchurl.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/searchurl")             |
-| [searchmatch](#searchmatch)         | `string`  | Required | cannot be null | [Crawl Properties](crawl-properties-searchmatch.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/searchmatch")         |
-| [pageitem](#pageitem)               | `object`  | Required | cannot be null | [Crawl Properties](crawl-properties-pageitem.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pageitem")               |
-| [useragent](#useragent)             | `boolean` | Required | cannot be null | [Crawl Properties](crawl-properties-useragent.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/useragent")             |
+| Property                            | Type         | Required | Nullable       | Defined by                                                                                                                                               |
+| :---------------------------------- | ------------ | -------- | -------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [name](#name)                       | `string`     | Required | cannot be null | [Crawl Properties](crawl-properties-crawl-name.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/name")                                       |
+| [value](#value)                     | `string`     | Required | cannot be null | [Crawl Properties](crawl-properties-crawl-value-the-identification-of-current-crawl.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/value") |
+| [description](#description)         | `string`     | Required | cannot be null | [Crawl Properties](crawl-properties-crawl-description.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/description")                         |
+| [type](#type)                       | `string`     | Required | cannot be null | [Crawl Properties](crawl-properties-crawl-type-json-or-html.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/type")                          |
+| [category](#category)               | `boolean`    | Required | cannot be null | [Crawl Properties](crawl-properties-category.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/category")                                     |
+| [categoryurl](#categoryurl)         | `string`     | Optional | cannot be null | [Crawl Properties](crawl-properties-categoryurl.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/categoryurl")                               |
+| [search](#search)                   | `boolean`    | Required | cannot be null | [Crawl Properties](crawl-properties-search.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/search")                                         |
+| [chinesesearch](#chinesesearch)     | `boolean`    | Required | cannot be null | [Crawl Properties](crawl-properties-chinesesearch.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/chinesesearch")                           |
+| [categoryitem](#categoryitem)       | `object`     | Optional | cannot be null | [Crawl Properties](crawl-properties-categoryitem.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/categoryitem")                             |
+| [categorydata](#categorydata)       | `array`      | Optional | cannot be null | [Crawl Properties](crawl-properties-categorydata.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/categorydata")                             |
+| [pageurl](#pageurl)                 | `string`     | Required | cannot be null | [Crawl Properties](crawl-properties-pageurl.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pageurl")                                       |
+| [pagematch](#pagematch)             | `string`     | Required | cannot be null | [Crawl Properties](crawl-properties-pagematch.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pagematch")                                   |
+| [pagemethod](#pagemethod)           | `string`     | Optional | cannot be null | [Crawl Properties](crawl-properties-pagemethod.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pagemethod")                                 |
+| [pageoffset](#pageoffset)           | `string`     | Optional | cannot be null | [Crawl Properties](crawl-properties-pageoffset.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pageoffset")                                 |
+| [pageoffsetmatch](#pageoffsetmatch) | `string`     | Optional | cannot be null | [Crawl Properties](crawl-properties-pageoffsetmatch.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pageoffsetmatch")                       |
+| [searchurl](#searchurl)             | `string`     | Optional | cannot be null | [Crawl Properties](crawl-properties-searchurl.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/searchurl")                                   |
+| [searchmatch](#searchmatch)         | `string`     | Optional | cannot be null | [Crawl Properties](crawl-properties-searchmatch.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/searchmatch")                               |
+| [pageitem](#pageitem)               | `object`     | Required | cannot be null | [Crawl Properties](crawl-properties-pageitem.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pageitem")                                     |
+| [useragent](#useragent)             | Unknown Type | Optional | cannot be null | [Crawl Properties](crawl-properties-fetch-useragent-or-false.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/useragent")                    |
 
 ## name
 
 
 
 
+> Crawl Name, commonly titlecase
+>
+
 `name`
 
 -   is required
--   Type: `string`
+-   Type: `string` ([Crawl name](crawl-properties-crawl-name.md))
 -   cannot be null
--   defined in: [Crawl Properties](crawl-properties-name.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/name")
+-   defined in: [Crawl Properties](crawl-properties-crawl-name.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/name")
 
 ### name Type
 
-`string`
+`string` ([Crawl name](crawl-properties-crawl-name.md))
 
 ## value
 
 
 
 
+> Crawl type, commonly lowercase
+>
+
 `value`
 
 -   is required
--   Type: `string`
+-   Type: `string` ([Crawl value, the Identification of current crawl](crawl-properties-crawl-value-the-identification-of-current-crawl.md))
 -   cannot be null
--   defined in: [Crawl Properties](crawl-properties-value.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/value")
+-   defined in: [Crawl Properties](crawl-properties-crawl-value-the-identification-of-current-crawl.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/value")
 
 ### value Type
 
-`string`
+`string` ([Crawl value, the Identification of current crawl](crawl-properties-crawl-value-the-identification-of-current-crawl.md))
 
 ## description
 
 
 
 
+> Crawl description
+>
+
 `description`
 
 -   is required
--   Type: `string`
+-   Type: `string` ([Crawl description](crawl-properties-crawl-description.md))
 -   cannot be null
--   defined in: [Crawl Properties](crawl-properties-description.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/description")
+-   defined in: [Crawl Properties](crawl-properties-crawl-description.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/description")
 
 ### description Type
 
-`string`
+`string` ([Crawl description](crawl-properties-crawl-description.md))
 
 ## type
 
@@ -93,13 +104,13 @@ This schema is a standard for capturing pictures.
 `type`
 
 -   is required
--   Type: `string`
+-   Type: `string` ([Crawl type json or html](crawl-properties-crawl-type-json-or-html.md))
 -   cannot be null
--   defined in: [Crawl Properties](crawl-properties-type.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/type")
+-   defined in: [Crawl Properties](crawl-properties-crawl-type-json-or-html.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/type")
 
 ### type Type
 
-`string`
+`string` ([Crawl type json or html](crawl-properties-crawl-type-json-or-html.md))
 
 ### type Constraints
 
@@ -125,6 +136,22 @@ This schema is a standard for capturing pictures.
 ### category Type
 
 `boolean`
+
+## categoryurl
+
+
+
+
+`categoryurl`
+
+-   is optional
+-   Type: `string`
+-   cannot be null
+-   defined in: [Crawl Properties](crawl-properties-categoryurl.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/categoryurl")
+
+### categoryurl Type
+
+`string`
 
 ## search
 
@@ -158,14 +185,36 @@ This schema is a standard for capturing pictures.
 
 `boolean`
 
+## categoryitem
+
+
+
+
+> category item content match
+>
+
+`categoryitem`
+
+-   is optional
+-   Type: `object` ([Details](crawl-properties-categoryitem.md))
+-   cannot be null
+-   defined in: [Crawl Properties](crawl-properties-categoryitem.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/categoryitem")
+
+### categoryitem Type
+
+`object` ([Details](crawl-properties-categoryitem.md))
+
 ## categorydata
 
 
 
 
+> directly provide category data
+>
+
 `categorydata`
 
--   is required
+-   is optional
 -   Type: `object[]` ([Details](crawl-properties-categorydata-items.md))
 -   cannot be null
 -   defined in: [Crawl Properties](crawl-properties-categorydata.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/categorydata")
@@ -213,7 +262,7 @@ This schema is a standard for capturing pictures.
 
 `pagemethod`
 
--   is required
+-   is optional
 -   Type: `string`
 -   cannot be null
 -   defined in: [Crawl Properties](crawl-properties-pagemethod.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/pagemethod")
@@ -261,7 +310,7 @@ This schema is a standard for capturing pictures.
 
 `searchurl`
 
--   is required
+-   is optional
 -   Type: `string`
 -   cannot be null
 -   defined in: [Crawl Properties](crawl-properties-searchurl.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/searchurl")
@@ -277,7 +326,7 @@ This schema is a standard for capturing pictures.
 
 `searchmatch`
 
--   is required
+-   is optional
 -   Type: `string`
 -   cannot be null
 -   defined in: [Crawl Properties](crawl-properties-searchmatch.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/searchmatch")
@@ -290,6 +339,9 @@ This schema is a standard for capturing pictures.
 
 
 
+
+> page item content match
+>
 
 `pageitem`
 
@@ -309,11 +361,11 @@ This schema is a standard for capturing pictures.
 
 `useragent`
 
--   is required
--   Type: `boolean`
+-   is optional
+-   Type: any of the folllowing: `string` or `boolean` ([fetch useragent or false](crawl-properties-fetch-useragent-or-false.md))
 -   cannot be null
--   defined in: [Crawl Properties](crawl-properties-useragent.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/useragent")
+-   defined in: [Crawl Properties](crawl-properties-fetch-useragent-or-false.md "https&#x3A;//schemas.w3cub.com/schemas/crawl#/properties/useragent")
 
 ### useragent Type
 
-`boolean`
+any of the folllowing: `string` or `boolean` ([fetch useragent or false](crawl-properties-fetch-useragent-or-false.md))

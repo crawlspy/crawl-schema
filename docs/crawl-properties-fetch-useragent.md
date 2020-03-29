@@ -1,4 +1,4 @@
-# Untitled string in Crawl Properties Schema
+# fetch useragent Schema
 
 ```txt
 https://schemas.w3cub.com/schemas/crawl#/properties/useragent
@@ -13,4 +13,4 @@ https://schemas.w3cub.com/schemas/crawl#/properties/useragent
 
 ## useragent Type
 
-`string`
+`string` ([fetch useragent](crawl-properties-fetch-useragent.md))

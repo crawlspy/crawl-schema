@@ -8,6 +8,7 @@
 
 ### Objects
 
+-   [Untitled object in Crawl Properties](./crawl-properties-categoryitem.md) – `https://schemas.w3cub.com/schemas/crawl#/properties/categoryitem`
 -   [Untitled object in Crawl Properties](./crawl-properties-categorydata-items.md) – `https://schemas.w3cub.com/schemas/crawl#/properties/categorydata/items`
 -   [Untitled object in Crawl Properties](./crawl-properties-pageitem.md) – `https://schemas.w3cub.com/schemas/crawl#/properties/pageitem`
 

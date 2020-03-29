@@ -1,4 +1,4 @@
-# Untitled string in Crawl Properties Schema
+# fetch useragent or false Schema
 
 ```txt
 https://schemas.w3cub.com/schemas/crawl#/properties/useragent
@@ -13,4 +13,4 @@ https://schemas.w3cub.com/schemas/crawl#/properties/useragent
 
 ## useragent Type
 
-`string`
+any of the folllowing: `string` or `boolean` ([fetch useragent or false](crawl-properties-fetch-useragent-or-false.md))
