@@ -1,7 +1,7 @@
 # crawl-schema
 Capturing picture schema.
 
-- version: 1.0
+> version: 1.0.0
 
 ## Url format
 
@@ -19,11 +19,11 @@ Capturing picture schema.
     `{{page * 10}}` is ok
 
 
-## Match the target using Filter
+## Match the target using Filters
 
 use `Vue filter` to implement.
 
-version `1.0` support the lists of filters:
+version `1.0.0` support the lists of filters:
 
 ```js
     lastafter: (str, last, ins)=> {
